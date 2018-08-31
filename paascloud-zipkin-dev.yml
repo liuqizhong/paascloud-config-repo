@@ -2,6 +2,8 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/paascloud_zipkin?characterEncoding=utf8&useSSL=false
     schema: classpath:/mysql.sql
+    username: root
+    password: root
   sleuth:
     enabled: false
   zipkin:
