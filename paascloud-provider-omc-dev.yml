@@ -41,7 +41,7 @@ security:
       user-info-uri: http://paascloud-gateway:7979/uac/user
       prefer-token-info: false
       jwt:
-        key-uri: http://paascloud-provider-uac:8000/oauth/token_key
+        key-uri: http://localhost:8000/oauth/token_key
 
 paascloud:
   enableSqlLogInterceptor: false
@@ -57,7 +57,7 @@ paascloud:
     interceptor:
       enable: true
   zk:
-    zkAddressList: paascloud-provider-zk:2181
+    zkAddressList: localhost:2181
   oauth2:
     jwtSigningKey: paascloud
     client:
